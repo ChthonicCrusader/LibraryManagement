@@ -1,0 +1,282 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Shubham</Author>
+  <LastAuthor>Shubham</LastAuthor>
+  <Created>2014-11-19T15:06:16Z</Created>
+  <LastSaved>2014-11-19T17:17:25Z</LastSaved>
+  <Version>14.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>7995</WindowHeight>
+  <WindowWidth>20115</WindowWidth>
+  <WindowTopX>240</WindowTopX>
+  <WindowTopY>75</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s66">
+   <Interior ss:Color="#E6B8B7" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s69">
+   <Interior ss:Color="#F2DCDB" ss:Pattern="Solid"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="38" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="90.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="127.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="387.75"/>
+   <Row>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">TABLE 1:</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">USERACCOUNTS</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">S.No.</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coloumn Name</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Arguments</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Comments</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">USERNAME</Data></Cell>
+    <Cell><Data ss:Type="String">varchar,Primary key</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PASSWORD</Data></Cell>
+    <Cell><Data ss:Type="String">type:password</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">ACCOUNT_TYPE</Data></Cell>
+    <Cell><Data ss:Type="String">varchar</Data></Cell>
+    <Cell><Data ss:Type="String">can be: admin, student, teacher, librarian</Data></Cell>
+   </Row>
+   <Row ss:Index="7">
+    <Cell ss:StyleID="s66"><Data ss:Type="String">TABLE 2:</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">BOOKREQUESTS</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">S.No.</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coloumn Name</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Arguments</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Comments</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">REQUESTOR</Data></Cell>
+    <Cell><Data ss:Type="String">FK(USERACCOUNT)</Data></Cell>
+    <Cell><Data ss:Type="String">refers to the person who has generated the request</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">APPROVER</Data></Cell>
+    <Cell><Data ss:Type="String">FK(USERACCOUNT)</Data></Cell>
+    <Cell><Data ss:Type="String">referrs to the faculty who has approved the request</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">BOOK_NAME</Data></Cell>
+    <Cell><Data ss:Type="String">varchar</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">AUTHOR_NAME</Data></Cell>
+    <Cell><Data ss:Type="String">varchar</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PUBLISHER</Data></Cell>
+    <Cell><Data ss:Type="String">varchar</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">ISBN_NUMBER</Data></Cell>
+    <Cell><Data ss:Type="String">numeric(13)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">QUANTITY</Data></Cell>
+    <Cell><Data ss:Type="String">numeric(3)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">STATUS</Data></Cell>
+    <Cell><Data ss:Type="String">varchar</Data></Cell>
+    <Cell><Data ss:Type="String">can be something like: waiting approval/approved/ordered/delivered</Data></Cell>
+   </Row>
+   <Row ss:Index="18">
+    <Cell ss:StyleID="s66"><Data ss:Type="String">TABLE 3:</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">BOOKSPRESENT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">S.No.</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coloumn Name</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Arguments</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Comments</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">BOOK_ID</Data></Cell>
+    <Cell><Data ss:Type="String">varchar, PK</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">BOOK_NAME</Data></Cell>
+    <Cell><Data ss:Type="String">varchar</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">TYPE</Data></Cell>
+    <Cell><Data ss:Type="String">varchar</Data></Cell>
+    <Cell><Data ss:Type="String">can be: general/book bank/supplementary</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">AUTHOR</Data></Cell>
+    <Cell><Data ss:Type="String">varchar</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PUBLISHER</Data></Cell>
+    <Cell><Data ss:Type="String">varchar</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">ISBN_NUMBER</Data></Cell>
+    <Cell><Data ss:Type="String">numeric(13)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">DEPARTMENT</Data></Cell>
+    <Cell><Data ss:Type="String">varchar</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">QUANTITY</Data></Cell>
+    <Cell><Data ss:Type="String">numerc(3)</Data></Cell>
+   </Row>
+   <Row ss:Index="29">
+    <Cell ss:StyleID="s66"><Data ss:Type="String">TABLE 4:</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">BOOKISSUERECORD</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">S.No.</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coloumn Name</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Arguments</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Comments</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">USERNAME</Data></Cell>
+    <Cell><Data ss:Type="String">FK(USERACCOUNT)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">ACCOUNT_TYPE</Data></Cell>
+    <Cell><Data ss:Type="String">FK(USERACCOUNT)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">BOOK_NAME</Data></Cell>
+    <Cell><Data ss:Type="String">FK(BOOKSPRESENT)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">BOOK_ID</Data></Cell>
+    <Cell><Data ss:Type="String">FK(BOOKSPRESENT)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">ISSUE_DATE</Data></Cell>
+    <Cell><Data ss:Type="String">date</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">RETURN_DATE</Data></Cell>
+    <Cell><Data ss:Type="String">date</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">RETURNED_DATE</Data></Cell>
+    <Cell><Data ss:Type="String">date</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">FINE</Data></Cell>
+    <Cell><Data ss:Type="String">numeric(5)</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>300</HorizontalResolution>
+    <VerticalResolution>300</VerticalResolution>
+   </Print>
+   <Selected/>
+   <TopRowVisible>15</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>28</ActiveRow>
+     <ActiveCol>1</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet2">
+  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="1" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet3">
+  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="1" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
