@@ -1,0 +1,23 @@
+---------------------------------------------------------
+1. Login Page -> Authenticate login
+
+2. books already issued 
+
+3. Search for books available -> Access repo
+
+4. Alert for pending books
+
+5. calculation of fine. 
+
+6. book reservation
+--------------------------------------------------------
+
+7. Journals download request -> update_A_1
+
+8. shared path for all journals -> update_A_2
+
+9. New Arrivals ->update_B_1
+
+10. Recommendations ->update_B_2
+
+11. account history  -> updte_B_3
